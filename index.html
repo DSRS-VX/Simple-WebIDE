@@ -1,0 +1,30 @@
+<html lang="en-US">
+<head>
+  <title>
+   	Web IDE | Home
+   </title>
+   <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
+</head>
+<script>
+function Preview() {
+	    let newWindow = window.open("about:blank", "", "_blank");
+     	var Code = document.getElementById("HTML").value
+   		let textBlock = Code
+    	if (newWindow) {
+    	newWindow.document.write(textBlock);
+    }
+}
+</script>
+
+<body>
+	<header>
+		<div class="vertical-menu">
+			<textarea id="HTML" placeholder="Your HTML Code Goes Here"></textarea>
+			<br>
+			<center>
+			<Button id="Preview" onclick="Preview()">Preview</Button>
+			</center>
+		</div>
+	</header>
+</body>
+</html>
